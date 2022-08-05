@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="generator" content="HTML Tidy for HTML5 for Linux version 5.6.0" />
+  <meta charset="utf-8" />
+  <title>Open University Walking club - Walks</title>
+  <meta name="keywords" content="open university, walks, walk search" />
+  <meta name="description"
+    content="Open University Walking Club - This page is where you can enter a new walk, search for current walks and update the details of any walks on the system." />
+  <meta name="author" content="Joanna McKeogh - R2707066" />
+  <link rel="stylesheet" href="styles.css" />
+      <!--(1) Here I have added a viewport so that I can control the style via screen size-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    
+    <nav aria-label="Main menu" class="top-nav">
+<div class="top-bit">
+      <!--here I needed to have all three items in a row and I achieved that using CSS-->
+      <img class="logo" src="images/Open_University_logo.png" alt="Open_University_logo">
+      <!--here I managed to replace the title of the page when the screen gets too small-->
+      <h1 class="full-text large">Open University Walking Club</h1>
+      <h1 class="mid-text">OU Walking Club</h1>
+      <h1 class="short-text">OUWC</h1>
+      <!--However I had lots of problems placing the login link in the right place-->
+      <a class="login" href="dummy_page.html">Login / Sign up</a>
+      </div>
+
+      <div class="top-menu">
+        <!-- (3) Here I needed to add a "top-menu" class to the div in order to remove it when the screen is too small-->
+
+      <hr>
+      <ul>
+        <li>
+          <a href="dummy_page.html">Home</a>
+        </li>
+        <li>
+          <a href="dummy_page.html">About Us</a>
+        </li>
+        <li>
+          <a href="dummy_page.html">Walks</a>
+        </li>
+        <li>
+          <a href="dummy_page.html">Events</a>
+        </li>
+        <li>
+          <a href="dummy_page.html">News</a>
+        </li>
+      </ul>
+
+      <hr>
+
+      <ul>
+        <li>
+          <a href="admin_landing_page.html">Members</a>
+        </li>
+        <li>
+          <a href="index.html">Walk Events</a>
+        </li>
+        <li>
+          <a href="dummy_page.html">Other Events</a>
+        </li>
+        <li>
+          <a href="dummy_page.html">News Items</a>
+        </li>
+        <li>
+          <a href="dummy_page.html">Announcements</a>
+        </li>
+      </ul>
+            <hr>
+            </div>
+
+            <button type="button" class="collapsible mobile-menu">Public menu</button>
+            <div class="content mobile-menu">
+              <p><a href="dummy_page.html">Home</a></p>
+              <p><a href="dummy_page.html">About Us</a>.</p>
+              <p><a href="dummy_page.html">Walks</a>.</p>
+              <p><a href="dummy_page.html">Events</a></p>
+              <p><a href="dummy_page.html">News</a></p>
+            </div>
+            <button type="button" class="collapsible mobile-menu">Admin menu</button>
+            <div class="content mobile-menu">
+              <p><a href="admin_landing_page.html">Members</a></p>
+              <p><a href="index.html">Walk Events</a>.</p>
+              <p><a href="dummy_page.html">Other Events</a>.</p>
+              <p><a href="dummy_page.html">News Items</a></p>
+              <p><a href="dummy_page.html">Announcements</a></p>
+            </div>
+
+            <script>
+              var coll = document.getElementsByClassName("collapsible");
+              var i;
+
+              for (i = 0; i < coll.length; i++) {
+                coll[i].addEventListener("click", function () {
+                  this.classList.toggle("active");
+                  var content = this.nextElementSibling;
+                  if (content.style.display === "block") {
+                    content.style.display = "none";
+                  } else {
+                    content.style.display = "block";
+                  }
+                });
+              }
+            </script>
+
+      <h1 class="centre-header">Walk Event</h1>
+
+    </nav>
+
+    <main>
+
+      <section class="boxes">
+        <h2 class="border"><a href="admin_landing_page.html">Members</a></h2>
+      </section>
+
+      <section>
+    <h2 class="border"><a href="dummy_page.html">News Items</a></h2>
+      </section>
+
+    <section>
+        <h2 class="border"><a href="q2b.html">Walk Events</a></h2>
+    </section>
+
+    <section>
+        <h2 class="border"><a href="dummy_page.html">Announcements</a></h2>
+    </section> 
+    
+    <section>
+        <h2 class="border"><a href="dummy_page.html">Other Events</a></h2>
+    </section>
+
+    </main>
+    
+    <footer>
+      <div><a class="footer_link" href="dummy_page.html">Privacy</a></div>
+      <div><a class="footer_link" href="dummy_page.html">Contact</a></div>
+      <div><a class="footer_link" href="dummy_page.html">FAQ</a></div>
+      <div><a href="dummy_page.html"><img src="images/social.jpg" alt="Links to social networks"></a></div>
+    </footer>
+  </body>
+</html>
